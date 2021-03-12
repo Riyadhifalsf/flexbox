@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" id="home">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Latihan Flexbox</title>
+</head>
+<body>
+    <nav>
+        <a href="#home"><h1>Rydhflsf</h1></a>
+        <ul>
+            <li><a href="#">Galleri</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <label>
+            <div class="menu-toggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </label>
+    </nav>
+
+    <section class="leaves">
+        <h2>Falling Leaves</h2>
+        <div class="set">
+            <div><img width="60" src="img/leaves1.png"></div>
+            <div><img width="60" src="img/leaves2.png"></div>
+            <div><img width="60" src="img/leaves3.png"></div>
+            <div><img width="60" src="img/leaves4.png"></div>
+            <div><img width="60" src="img/leaves1.png"></div>
+            <div><img width="60" src="img/leaves2.png"></div>
+            <div><img width="60" src="img/leaves3.png"></div>
+            <div><img width="60" src="img/leaves4.png"></div>
+        </div>
+
+        <div class="set set2">
+            <div><img width="60" src="img/leaves1.png"></div>
+            <div><img width="60" src="img/leaves2.png"></div>
+            <div><img width="60" src="img/leaves3.png"></div>
+            <div><img width="60" src="img/leaves4.png"></div>
+            <div><img width="60" src="img/leaves1.png"></div>
+            <div><img width="60" src="img/leaves2.png"></div>
+            <div><img width="60" src="img/leaves3.png"></div>
+            <div><img width="60" src="img/leaves4.png"></div>
+        </div>
+
+        <div class="set set3">
+            <div><img width="60" src="img/leaves1.png"></div>
+            <div><img width="60" src="img/leaves2.png"></div>
+            <div><img width="60" src="img/leaves3.png"></div>
+            <div><img width="60" src="img/leaves4.png"></div>
+            <div><img width="60" src="img/leaves1.png"></div>
+            <div><img width="60" src="img/leaves2.png"></div>
+            <div><img width="60" src="img/leaves3.png"></div>
+            <div><img width="60" src="img/leaves4.png"></div>
+        </div>
+    </section>
+
+    <div class="img-rotate">
+        <div class="box">
+            <span style="--i:1;"><img src="img/img1.jpg"></span>
+            <span style="--i:2;"><img src="img/img2.jpg"></span>
+            <span style="--i:3;"><img src="img/img3.jpg"></span>
+            <span style="--i:4;"><img src="img/img4.jpg"></span>
+            <span style="--i:5;"><img src="img/img5.jpg"></span>
+            <span style="--i:6;"><img src="img/img6.jpg"></span>
+            <span style="--i:7;"><img src="img/img7.jpg"></span>
+            <span style="--i:8;"><img src="img/img8.jpg"></span>
+            <span style="--i:9;"><img src="img/img9.jpg"></span>
+        </div>
+    </div>
+
+    <div class="img-slice">
+        <div class="clip clip1"></div>
+        <div class="clip clip2"></div>
+        <div class="clip clip3"></div>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function(){
+            nav.classList.toggle('active')
+        });
+    </script>
+</body>
+</html>
